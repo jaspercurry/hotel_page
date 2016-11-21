@@ -1,6 +1,6 @@
 ## Example Home Page With Exit Detection
 
-A fully responsive example hotel homepage that uses ouiboounce to display the iframe when a user moves their cursor to exit the page (click back button/close).
+A fully responsive hotel homepage that uses ouiboounce to display an iframe when a user moves their cursor to exit the page (clicks back button/close).
 
 Ouiboounce Info:
 https://github.com/carlsednaoui/ouibounce
