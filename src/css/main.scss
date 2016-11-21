@@ -1,0 +1,343 @@
+$purple: rgb(73, 0, 168);
+$dark-grey: rgb(26, 26, 26);
+$medium-grey: rgb(38, 38, 38);
+$light-grey: rgb(130, 130, 130);
+
+$font-primary: "Helvetica", "Arial", sans-serif;
+$font-secondary: "Source Sans Pro", "Calibri", sans-serif;
+
+$mobile: 768px;
+
+html, body {
+  overflow-x: hidden;
+  word-wrap: break-word;
+  font-family: $font-primary;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-secondary;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 78px;
+  text-align: center;
+  color: white;
+  @media (max-width: $mobile) {
+    font-size: 58px;
+  }
+}
+
+h2 {
+  font-size: 50px;
+  line-height: 1.1;
+  text-align: center;
+  @media (max-width: $mobile) {
+    font-size: 40px;
+  }
+}
+
+h3 {
+  font-size: 24px;
+  @media (max-width: $mobile) {
+    font-size: 18px;
+  }
+}
+
+p {
+  font-family: $font-primary;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1.5;
+  &.sub-heading {
+    font-family: $font-secondary;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.4;
+    text-align: center;
+  }
+}
+
+button {
+  margin-top: 16px;
+  font-family: $font-secondary;
+}
+
+.bg-image {
+    background: linear-gradient(
+      rgba(73,0,168, 0.45),
+      rgba(73,0,168, 0.45)
+    ),
+    url(../assets/hotel-main.jpg) no-repeat top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  @media (max-width: $mobile) {
+    background-position: top left;
+  }
+
+}
+
+body {
+  overflow-x: hidden;
+  word-wrap: break-word;
+}
+
+.navbar-default {
+      background-color:transparent;
+      border-color:transparent;
+      background-image:none;
+      box-shadow:none;
+
+      @media (max-width: 768px){
+        background-color: $purple;
+        border-color: transparent;
+        background-image:none;
+        box-shadow:none;
+        .navbar-nav li{
+          text-align: center;
+        }
+      }
+ }
+
+
+.purple-div {
+  width: 100%;
+  background: $purple;
+  button {
+    color: white;
+    background-color: $purple;
+    border-color: white;
+  }
+  img {
+    padding-top: 30px;
+  }
+
+}
+
+.dark-grey-div {
+  width: 100%;
+  background: $dark-grey;
+  h3 {
+    color: white;
+  }
+  p {
+    color: $light-grey
+  }
+  button {
+    color: $light-grey;
+    background-color: $dark-grey;
+    border-color: $light-grey;
+  }
+  textarea{
+    background-color: $medium-grey;
+    border-style: none;
+  }
+  input[type="text"]{
+    background-color: $medium-grey;
+    border-style: none;
+  }
+
+
+}
+
+.info-block-light {
+text-align: center;
+  h2 {
+    color: white;
+  }
+  p {
+    color: $light-grey;
+  }
+}
+.info-block-dark {
+  text-align: center;
+  h2 {
+    color: black;
+  }
+  p {
+    color: black;
+  }
+}
+
+.white {
+  color: white;
+}
+
+.light-grey {
+  color: $light-grey
+}
+
+.purple-button {
+  color: white;
+  background-color: $purple;
+  border-color: $purple;
+}
+
+
+.grid-block {
+  margin-bottom: 100px;
+  i {
+    display:block;
+    text-align:center;
+    color: $purple;
+  }
+  h3 {
+    text-align: center;
+    color: white;
+  }
+  p {
+    text-align: center;
+    color: $light-grey
+  }
+  @media (max-width: 768px){
+    margin-bottom: 0px;
+  }
+}
+
+.nav.navbar-nav.navbar-right li a {
+    color: white;
+    font-size: 20px;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+    font-size: 20px;
+}
+
+.top-div-pad {
+  padding-top: 70px;
+  @media (max-width: 768px){
+    padding-top: 0px;
+  }
+}
+
+.bottom-div-pad {
+  padding-bottom: 70px;
+  @media (max-width: 768px){
+    padding-bottom: 0px;
+  }
+}
+
+.grey-glyph {
+  i {
+    letter-spacing: 3px;
+    text-align:center;
+    color: $light-grey;
+  }
+}
+
+.circle {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 175px;
+  height: 175px;
+}
+
+.team-div {
+  text-align: center;
+  h3  {
+    color: $purple;
+    font-size: 34px;
+    line-height: 1;
+  }
+  h4 {
+    font-size: 18px;
+    color: purple;
+    font-weight: 300;
+  }
+  i {
+    color: $purple;
+  }
+}
+
+footer {
+  margin-top: 30px;
+  padding-top: 10px;
+  h3 {
+    color: white;
+  }
+  p {
+    color: $light-grey;
+  }
+  .ultra-footer {
+    border-top: 1px solid $light-grey;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-size: 16px;
+  }
+}
+
+.black-background {
+  background: black;
+  background: rgb(23, 23, 23)
+}
+
+@media (max-width: 768px){
+  .col-xs-12, .col-xs-6 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: $purple;
+}
+
+.navbar-fixed-top {
+  background-color: rgba(73, 0, 168,0);
+  transition: background-color .4s ease 0s;
+}
+
+.navbar-fixed-top.opaque {
+  background-color: rgba(73, 0, 168,.8);
+  transition: background-color .4s ease 0s;
+}
+
+.contact {
+  @media (max-width: $mobile) {
+    .col-xs-12, .col-xs-6 {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+  }
+}
+
+ #welcome-div {
+   text-align: center;
+   padding-top: 130px;
+   padding-bottom: 240px;
+   @media (max-width: 768px){
+     padding-bottom: 100px;
+     }
+ }
+
+ .text-block {
+   color: white;
+   text-align: left;
+   h2 {
+     text-align: left;
+   }
+   @media (max-width: $mobile) {
+     text-align: center;
+     h2 {
+       text-align: center;
+     }
+     }
+ }
+
+ #ouibounce-modal {
+   display: none;
+ }
